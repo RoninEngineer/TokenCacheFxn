@@ -9,12 +9,12 @@ namespace TokenCacheFxn.Infrastructure.AppSettings
     public class AppSettingsKey
     {
         public const string RedisConnectionString = "RedisCacheConnectionString";
-        public const string SFDCBaseURL = "";
-        public const string SFDCGrantType = "";
-        public const string SFDCClientId = "";
-        public const string SFDCClientSecret = "";
-        public const string SFDCUserName = "";
-        public const string SFDCPassword = "";
+        public const string SFDCBaseURL = "SFDCBaseUrl";
+        public const string SFDCGrantType = "SFDCGrantType";
+        public const string SFDCClientId = "SFDCClientId";
+        public const string SFDCClientSecret = "SFDCClientSecret";
+        public const string SFDCUserName = "SFDCUserName";
+        public const string SFDCPassword = "SFDCPassword";
 
     }
 }
