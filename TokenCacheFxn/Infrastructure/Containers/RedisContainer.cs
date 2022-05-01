@@ -13,8 +13,10 @@ namespace TokenCacheFxn.Infrastructure.Containers
         private readonly IMemoryCache _memoryCache;
         private readonly IRedisCacheContainerProvider _cacheContainerProvider ;
         private bool _disposed = false;
+
         private bool _connected => _cacheContainerProvider.Connection.IsConnected;
         private IDatabase _cacheDb => _cacheContainerProvider.Connection.GetDatabase();
+
         public RedisContainer(IRedisCacheContainerProvider cacheContainerProvider, IMemoryCache memoryCache)
         {
             _cacheContainerProvider = cacheContainerProvider;

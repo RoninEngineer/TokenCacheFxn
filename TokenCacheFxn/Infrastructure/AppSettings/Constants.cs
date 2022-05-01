@@ -19,5 +19,10 @@ namespace TokenCacheFxn.Infrastructure.AppSettings
         {
             public const string SFDCTokenUrl = "/services/oauth2/token";
         }
+
+        public class FunctionNames
+        {
+            public const string SFDCTokenFunction = "SFDCTokenFxn";
+        }
     }
 }

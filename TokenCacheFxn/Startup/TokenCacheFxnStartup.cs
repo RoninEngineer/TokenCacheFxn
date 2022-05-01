@@ -22,6 +22,8 @@ namespace TokenCacheFxn.Startup
             builder.Services.AddSingleton<ICacheContainer, CacheContainer>() ;
             builder.Services.ConfigureServices(config);
             builder.Services.AddMemoryCache();
+
+            builder.Services.AddTransient<ISFDCTokenProvider, SFDCTokenProvider>();
             
         }
     }
